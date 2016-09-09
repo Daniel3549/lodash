@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>lodash</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<div class="filtros">
+	<form>
+	<div class="input">
+		<label>
+			busqueda Categoria tag
+		</label>
+		<input type="text" name="tag" id="tag" onchange="filter(this.value)">
+	</div>
+	<div class="input">
+		<label>
+			busqueda Categoria
+		</label>
+		<input type="text" name="q" id="q" onchange="search(this.value)">
+	</div>
+	</form>
+</div>
+
+<div id="json-content">
+	<textarea name="json" id="json" rows="35" cols="70">
+		
+	</textarea>
+</div>
+
+<script type="text/javascript" src="lodash.js"></script>
+<script type="text/javascript" src="data.js"></script>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
